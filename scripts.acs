@@ -1,0 +1,33 @@
+#include "zcommon.acs"
+
+script "PortalOpenSound" (void)
+{
+	 //14 is the Thing ID number/tag in Ultimate Doom Builder for map99 same goes for the other scripts. 
+     //The same applies to other scripts that rely on emitting sound from their assigned Thing ID. You can change or add tags on these scripts for your mod
+    ThingSound(14, "sounds/portal_open", 127);
+}
+
+script "PortalCloseSound" (void)
+{
+    ThingSound(16, "sounds/portal_close", 127); // Play Portal Close sound at full volume
+}
+
+// Play the Klaxon sound in a loop
+script "KlaxonLoopSound" (void)
+{
+    while (true)//whileloop to repeat the sound
+    {
+        ThingSound(4, "sounds/klaxon", 127); // Play Klaxon sound at full volume
+		Delay(1 * 35);//delay is needed to loop the sound properly otherwise it will play once without it
+    }
+}
+
+// Play the Portal Loop sound in a loop
+script "PortalLoopSound" (void)
+{
+    while (true)
+    {
+        ThingSound(6, "sounds/portal_loop", 127); // Play Portal Loop sound at full volume
+		Delay(4 * 35);
+    }
+}

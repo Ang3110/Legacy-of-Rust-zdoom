@@ -1,0 +1,349 @@
+// ZMAPINFO for doom-id1
+episode MAP01
+{
+    name = "The Vulcan Abyss"
+    picname = "M_EPI1"
+}
+
+episode MAP08
+{
+    name = "Counterfeit Eden"
+    picname = "M_EPI2"
+
+}
+
+// Cluster Definitions for Intermission Texts
+cluster 1
+{
+	flat = "SLIME20"
+	music = "D_SHORES"
+	exittext = 
+        "Damn.",
+        " ",
+        "The oldest trap in the book, and you fell",
+        "right into it. Even the best make mistakes.",
+        " ",
+        "As you fade into unconsciousness, an",
+        "epiphany surges through the pain: the base",
+        "is beyond recovery, and the UAC knew it.",
+        " ",
+        "Why send their best agent on a suicide run?",
+        "There's something else at stake. What are",
+        "they hiding on this barren, bleeding rock?",
+        " ",
+        "As they toss your half-conscious form into",
+        "a rusty iron cage, you vow to find answers.",
+        " ",
+        "Time to carve a legacy of your own."
+}
+
+cluster 2
+{
+    flat = "FLOOR9_2"
+	music = "D_SHORES"
+	exittext = 
+        "Tick. Tock. Tick. Tock.",
+        " ",
+        "The air is thick with blood and irony.",
+        "You've turned the UAC's final gambit against",
+        "them, but will they have the last laugh?",
+        " ",
+        "Three. Two. One.",
+        " ",
+        "Then, with a snap and a puff of ozone, the",
+        "portal winks out of existence, its crimson",
+        "maelstrom yielding to blessed silence.",
+        " ",
+        "Zero.",
+        " ",
+        "It's done. You've rid the world of two evils",
+        "in a single violent stroke... and survived.",
+        "Legacy can wait. You ain't finished yet."
+}
+
+// First Episode Maps
+map MAP01 "Scar Gate"
+{
+    levelnum = 1
+    next = "MAP02"
+    secretnext = "MAP02"
+    //author: Samuel Villarreal
+	sky1 = "SKYX1", 0
+    cluster = 1
+    music = "D_WELCOM"
+	exitpic = "$IN_LORE1"
+	enterpic = "$IN_LORE1"
+
+}
+
+map MAP02 "Sanguine Wastes"
+{
+    levelnum = 2
+    next = "MAP03"
+    secretnext = "MAP15"  // Secret exit to MAP15
+    //author: Xaser Acheron
+	sky1 = "SKYX3", 0
+    cluster = 1
+    music = "D_SHORES"
+	exitpic = "$IN_LORE1"
+	enterpic = "$IN_LORE1"
+
+}
+
+map MAP03 "Spirit Drains"
+{
+    levelnum = 3
+    next = "MAP04"
+	//author: Thomas Carter
+    sky1 = "SKYX3", 0
+    cluster = 1
+    music = "D_BILGE"
+	exitpic = "$IN_LORE1"
+	enterpic = "$IN_LORE1"
+}
+
+map MAP04 "Descending Inferno"
+{
+    levelnum = 4
+    next = "MAP05"
+	//author: Samuel Villarreal
+    sky1 = "SKYX3", 0
+    cluster = 1
+    music = "D_REGARD"
+	exitpic = "$IN_LORE1"
+	enterpic = "$IN_LORE1"
+}
+
+map MAP05 "Creeping Hate"
+{
+    levelnum = 5
+    next = "MAP06"
+	//author: Samuel Villarreal
+    sky1 = "SKYZ4", 0
+    cluster = 1
+    music = "D_LAUGH"
+	exitpic = "$IN_LORE1"
+	enterpic = "$IN_LORE1"
+}
+
+map MAP06 "The Coiled City"
+{
+    levelnum = 6
+    next = "MAP07"
+	//author: Xaser Acheron
+    sky1 = "FIRESK00"
+    cluster = 1
+    music = "D_CLOUDY"
+	exitpic = "$IN_LORE1"
+	enterpic = "$IN_LORE1"
+}
+
+map MAP07 "Forfeited Salvation"
+{
+    levelnum = 7
+	next = "EndGame1"
+	secretnext = "MAP08"
+	//author: Samuel Villarreal
+    sky1 = "FIRESK00"
+    cluster = 1
+    music = "D_TACTIC"
+	exitpic = "$IN_LORE1"
+	enterpic = "$IN_LORE1"
+}
+
+map MAP15 "Ash Mill"
+{
+    levelnum = 15
+    next = "MAP03"
+	//author: Xaser Acheron
+    sky1 = "SKYX3", 0
+    cluster = 1
+    music = "D_OPENIN"
+	exitpic = "$IN_LORE1"
+	enterpic = "$IN_LORE1"
+}
+
+// Second Episode Maps
+
+map MAP08 "Second Coming"
+{
+    levelnum = 8
+    next = "MAP09"
+	//author: Ethan Watson & Xaser Acheron
+    sky1 = "SKYX2", 0
+    cluster = 2
+    music = "D_BONK"
+	exitpic = "$IN_LORE2"
+	enterpic = "$IN_LORE2"
+}	
+
+map MAP09 "Falsehood"
+{
+    levelnum = 9
+    next = "MAP10"
+	//author: Samuel Villarreal
+    sky1 = "SKYX2", 0
+    cluster = 2
+    music = "D_DRIVER"
+	exitpic = "$IN_LORE2"
+	enterpic = "$IN_LORE2"
+}
+
+map MAP10 "Dis Union"
+{
+    levelnum = 10
+    next = "MAP11"
+    secretnext = "MAP16"  // Secret exit to MAP16
+	//author: Ethan Watson
+    sky1 = "SKYX2", 0
+    cluster = 2
+    music = "D_WIZARD"
+	exitpic = "$IN_LORE2"
+	enterpic = "$IN_LORE2"
+}
+
+map MAP11 "Echoes of Pain"
+{
+    levelnum = 11
+    next = "MAP12"
+	//author: Samuel Villarreal
+    sky1 = "SKYX2", 0
+    cluster = 2
+    music = "D_DEJAVU"
+	exitpic = "$IN_LORE2"
+	enterpic = "$IN_LORE2"
+}
+
+map MAP12 "The Rack"
+{
+    levelnum = 12
+    next = "MAP13"
+	//author: Samuel Villarreal
+    sky1 = "FIRESK00"
+    cluster = 2
+    music = "D_DISGUS"
+	exitpic = "$IN_LORE2"
+	enterpic = "$IN_LORE2"
+}
+
+map MAP13 "Soul Silo"
+{
+    levelnum = 13
+    next = "MAP14"
+	//author: Kevin Dunlop
+    sky1 = "SKYX4", 0
+    cluster = 2
+    music = "D_VESPER"
+	specialaction = "Cyberdemon", Floor_LowerToLowest, 666, 8 //acts similar to bossaction
+	exitpic = "$IN_LORE2"
+	enterpic = "$IN_LORE2"
+}
+
+map MAP14 "Brink"
+{
+	Next = EndSequence, "lorcast0"
+	levelnum = 14
+	//author: Xaser Acheron
+    sky1 = "GNFRSK00"
+    cluster = 2
+    music = "D_SKELET"
+    specialaction = "TyrantBoss1", Floor_LowerToLowest, 666, 8// TyrantBoss1
+    specialaction = "TyrantBoss2", Floor_LowerToLowest,667, 8 // TyrantBoss2
+	exitpic = "$IN_LORE2"
+	enterpic = "$IN_LORE2"
+}
+
+//Enjay what would I do without you
+Intermission lorcast0
+{
+	Image
+	{
+		Background = "BOSSBACK"
+		Music = "D_DEJAVU"
+	}
+	Link = lorcast
+}
+
+Intermission lorcast
+{
+    Cast
+    {
+        CastClass = "Ghoul"
+        CastName = "Ghoul"
+        AttackSound = "Missile", 1, "imp/attack"
+    }
+    
+    Cast
+    {
+        CastClass = "Banshee"
+        CastName = "Banshee"
+        //AttackSound = "See", 1, "banshee/active" \\makes it sound like it had a seizure, their presence is already scary enough
+    }
+    
+    Cast
+    {
+        CastClass = "ShockTrooper"
+        CastName = "ShockTrooper"
+        AttackSound = "Missile", 1, "weapons/plasmaf"
+		AttackSound = "Missile", 3, "weapons/plasmaf"
+		AttackSound = "Missile", 5, "weapons/plasmaf"
+    }
+
+    Cast
+    {
+        CastClass = "Mindweaver"
+        CastName = "Mindweaver"
+        AttackSound = "Missile", 1, "chainguy/attack"
+		AttackSound = "Missile", 2, "chainguy/attack"
+		AttackSound = "Missile", 3, "chainguy/attack"
+    }
+
+    Cast
+    {
+        CastClass = "Vassago"
+        CastName = "Vassago"
+        AttackSound = "Missile", 1, "VassagoFlame/SeeSound"
+    }
+
+    Cast
+    {
+        CastClass = "Tyrant"
+        CastName = "Tyrant"
+        AttackSound = "Missile", 1, "weapons/rocklf"
+		AttackSound = "Missile", 3, "weapons/rocklf"
+		AttackSound = "Missile", 5, "weapons/rocklf"
+    }
+
+    Cast
+    {
+        CastClass = "DoomPlayer"
+        CastName = "Our Hero"
+        AttackSound = "Missile", 0, "weapons/pistol"
+    }
+
+    Link = lorcast // Restart cast call
+}
+
+map MAP16 "Panopticon"
+{
+    levelnum = 16
+    next = "MAP11"
+	//author: Xaser Acheron
+    sky1 = "SKYX2", 0
+    cluster = 2
+    music = "D_HELFOR"
+	exitpic = "$IN_LORE2"
+	enterpic = "$IN_LORE2"
+}
+
+// Test Map
+
+map MAP99 "Test Map Please Ignore"
+{
+    levelnum = 99
+    next = "MAP99"
+	//author: by nobody I guess 
+    sky1 = "SKYX2", 0
+    cluster = 99
+    music = "D_BLANK"
+}
