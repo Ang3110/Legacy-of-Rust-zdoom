@@ -1,0 +1,1463 @@
+//keep this incase if wads will use this format though I'm not sure if mappers are going to stick with mbf21 only or widely compatible to other source ports
+/*****************************************************************************
+ * Decorations
+ ****************************************************************************/
+//zandronum hates using Deh_Actors, otherwise I must of done something wrong with my code
+actor LargeCorpsePile /*replaces Deh_Actor_166*/ 3101
+{
+    //$Category Decoration
+    Radius 40
+    Height 60
+    +SOLID
+
+    States
+    {
+    Spawn:
+        POL7 A -1
+        Stop
+    }
+}
+
+actor HumanBBQ1 /*replaces Deh_Actor_167*/ 3102
+{
+    //$Category Decoration
+    Radius 20
+    Height 88
+    +SOLID
+	
+    States
+    {
+    Spawn:
+        HBBQ ABC 5 Bright
+        Loop
+    }
+}
+
+actor HumanBBQ2 :  HumanBBQ1 /*replaces Deh_Actor_168*/ 3103
+{
+    //$Category Decoration
+    States
+    {
+    Spawn:
+        HBB2 ABC 5 Bright
+        Loop
+    }
+}
+
+actor HangingBodyBothLegs /*replaces Deh_Actor_169*/ 3104
+{
+    //$Category Decoration
+    Radius 16
+    Height 80
+    +NOGRAVITY
+    +SPAWNCEILING
+
+    States
+    {
+    Spawn:
+        GOR6 A -1
+        Stop
+    }
+}
+
+actor HangingBodyBothLegsSolid : HangingBodyBothLegs /*replaces Deh_Actor_170*/ 3105
+{
+    //$Category Decoration
+    +SOLID
+}
+
+actor HangingBodyCrucified /*replaces Deh_Actor_171*/ 3106
+{
+    //$Category Decoration
+    Radius 16
+    Height 64
+    +NOGRAVITY
+    +SPAWNCEILING
+
+    States
+    {
+    Spawn:
+        GOR7 A -1
+        Stop
+    }
+}
+
+actor HangingBodyCrucifiedSolid : HangingBodyCrucified /*replaces Deh_Actor_172*/ 3107
+{
+    //$Category Decoration
+    +SOLID
+}
+
+actor HangingBodyArmsBound /*replaces Deh_Actor_173*/ 3108
+{
+    //$Category Decoration
+    Radius 16
+    Height 72
+    +NOGRAVITY
+    +SPAWNCEILING
+
+    States
+    {
+    Spawn:
+        GOR8 A -1
+        Stop
+    }
+}
+
+actor HangingBodyArmsBoundSolid : HangingBodyArmsBound /*replaces Deh_Actor_174*/ 3109
+{
+    //$Category Decoration
+    +SOLID
+}
+
+actor HangingBaronOfHell /*replaces Deh_Actor_175*/ 3110
+{
+    //$Category Decoration
+    Radius 16
+    Height 80
+    +NOGRAVITY
+    +SPAWNCEILING
+
+    States
+    {
+    Spawn:
+        GORA A -1
+        Stop
+    }
+}
+
+actor HangingBaronOfHellSolid : HangingBaronOfHell /*replaces Deh_Actor_176*/ 3111
+{
+    //$Category Decoration
+    +SOLID
+}
+
+actor HangingChainedBody /*replaces Deh_Actor_177*/ 3112
+{
+    //$Category Decoration
+    Radius 16
+    Height 84
+    +NOGRAVITY
+    +SPAWNCEILING
+
+    States
+    {
+    Spawn:
+        HDB7 A -1
+        Stop
+    }
+}
+
+actor HangingChainedBodySolid : HangingChainedBody /*replaces Deh_Actor_178*/ 3113
+{
+    //$Category Decoration
+    +SOLID
+}
+
+actor HangingChainedTorso /*replaces Deh_Actor_179*/ 3114
+{
+    //$Category Decoration
+    Radius 16
+    Height 52
+    +NOGRAVITY
+    +SPAWNCEILING
+
+    States
+    {
+    Spawn:
+        HDB8 A -1
+        Stop
+    }
+}
+
+actor HangingChainedTorsoSolid : HangingChainedTorso /*replaces Deh_Actor_180*/ 3115
+{
+    //$Category Decoration
+    +SOLID
+}
+
+actor SkullPoleTrio /*replaces Deh_Actor_181*/ 3116
+{
+    //$Category Decoration
+	Radius 20
+	Height 48
+	+SOLID
+
+    States
+    {
+    Spawn:
+        POLA A -1
+        Stop
+    }
+}
+
+actor SkullGibs /*replaces Deh_Actor_182*/ 3117
+{
+    //$Category Decoration
+	Radius 24
+	Height 10
+	+NOBLOCKMAP
+	+MOVEWITHSECTOR
+
+    States
+    {
+    Spawn:
+        POB6 A -1
+        Stop
+    }
+}
+
+
+/*****************************************************************************
+ * nature
+ ****************************************************************************/
+actor GrayStalagmite /*replaces Deh_Actor_165*/ 3100
+{
+    //$Category Obstacles
+    Radius 16
+    Height 40
+	ProjectilePassHeight -16
+    +SOLID
+
+    States
+    {
+    Spawn:
+        SMT2 A -1
+        Stop
+    }
+}
+
+actor BushShort /*replaces Deh_Actor_183*/ 3118
+{
+    //$Category Decoration
+    Radius 12
+    Height 20
+    +SOLID
+
+    States
+    {
+    Spawn:
+        BSH1 A -1
+        Stop
+    }
+}
+
+actor BushShortBurned1 /*replaces Deh_Actor_184*/ 3119
+{
+    //$Category Decoration
+    Radius 12
+    Height 20
+
+    States
+    {
+    Spawn:
+        BSH1 B -1
+        Stop
+    }
+}
+
+actor BushShortBurned2 /*replaces Deh_Actor_185*/ 3120
+{
+    //$Category Decoration
+    Radius 12
+    Height 20
+	
+    States
+    {
+    Spawn:
+        BSH1 C -1
+        Stop
+    }
+}
+
+actor BushTall /*replaces Deh_Actor_186*/ 3121
+{
+    //$Category Decoration
+    Radius 12
+    Height 60
+    +SOLID
+
+    States
+    {
+    Spawn:
+        BSH2 A -1
+        Stop
+    }
+}
+
+actor BushTallBurned1 /*replaces Deh_Actor_187*/ 3122
+{
+    //$Category Decoration
+    Radius 12
+    Height 16
+
+    States
+    {
+    Spawn:
+        BSH2 B -1
+        Stop
+    }
+}
+
+actor BushTallBurned2 /*replaces Deh_Actor_188*/ 3123
+{
+    //$Category Decoration
+    Radius 12
+    Height 16
+
+    States
+    {
+    Spawn:
+        BSH2 C -1
+        Stop
+    }
+}
+
+actor CaveRockColumn /*replaces Deh_Actor_189*/ 3124
+{
+    //$Category Obstacles
+    Radius 24
+    Height 90
+    +SOLID
+
+    States
+    {
+    Spawn:
+        STMI A -1
+        Stop
+    }
+}
+
+actor CaveStalagmiteLarge /*replaces Deh_Actor_190*/ 3125
+{
+    //$Category Obstacles
+	Radius 16
+	Height 90
+	ProjectilePassHeight -16
+    +SOLID
+
+    States
+    {
+    Spawn:
+        STG1 A -1
+        Stop
+    }
+}
+
+actor CaveStalagmiteMedium /*replaces Deh_Actor_191*/ 3126
+{
+    //$Category Obstacles
+	Radius 16
+	Height 68
+	ProjectilePassHeight -16
+    +SOLID
+
+    States
+    {
+    Spawn:
+        STG2 A -1
+        Stop
+    }
+}
+
+actor CaveStalagmiteSmall /*replaces Deh_Actor_192*/ 3127
+{
+    //$Category Obstacles
+    Radius 8
+    Height 40
+    +SOLID
+
+    States
+    {
+    Spawn:
+        STG3 A -1
+        Stop
+    }
+}
+
+actor CaveStalactiteLarge /*replaces Deh_Actor_193*/ 3128
+{
+    //$Category Obstacles
+    Radius 16
+    Height 112
+    +SPAWNCEILING
+    +NOGRAVITY
+
+    States
+    {
+    Spawn:
+        STC1 A -1
+        Stop
+    }
+}
+
+actor CaveStalactiteLargeSolid : CaveStalactiteLarge /*replaces Deh_Actor_194*/ 3129
+{
+    //$Category Obstacles
+    +SOLID
+}
+
+actor CaveStalactiteMedium /*replaces Deh_Actor_195*/ 3130
+{
+    //$Category Obstacles
+    Radius 12
+    Height 64
+    +SPAWNCEILING
+    +NOGRAVITY
+
+    States
+    {
+    Spawn:
+        STC2 A -1
+        Stop
+    }
+}
+
+actor CaveStalactiteMediumSolid : CaveStalactiteMedium /*replaces /*Deh_Actor_196*/ 3131
+{
+    //$Category Obstacles
+    +SOLID
+}
+
+actor CaveStalactiteSmall /*replaces /*Deh_Actor_197*/ 3132
+{
+    //$Category Obstacles
+    Radius 8
+    Height 32
+    +SPAWNCEILING
+    +NOGRAVITY
+
+    States
+    {
+    Spawn:
+        STC3 A -1
+        Stop
+    }
+}
+
+actor CaveStalactiteSmallSolid : CaveStalactiteSmall /*replaces /*Deh_Actor_198*/ 3133
+{
+    //$Category Obstacles
+    +SOLID
+}
+
+/*****************************************************************************
+ * tech
+ ****************************************************************************/
+
+actor OfficeChair /*replaces /*Deh_Actor_199*/ 3134
+{
+    //$Category Obstacles
+    Radius 12
+    Height 28
+    +SOLID
+
+    States
+    {
+    Spawn:
+        CHR1 A -1
+        Stop
+    }
+}
+
+actor OfficeLamp /*replaces /*Deh_Actor_200*/ 3135
+{
+    //$Category Light sources
+    Radius 12
+    Height 52
+    Health 20
+    Mass 65536
+    DeathSound "sounds/lampbreak"
+    +SOLID
+    +SHOOTABLE
+    +NOBLOOD
+
+    States
+    {
+    Spawn:
+        LAMP A -1 Bright
+        Stop
+    Death:
+		LAMP B 3 Bright A_Scream
+        LAMP B 3 Bright A_Fall
+    DeathLoop:
+        LAMP CD 5 Bright
+        Loop
+    }
+}
+
+actor CeilingLamp /*replaces Deh_Actor_203*/ 3137
+{
+    //$Category Light sources
+    Radius 12
+    Height 32
+    +SPAWNCEILING
+    +NOGRAVITY
+
+    States
+    {
+    Spawn:
+        TLP6 A -1 Bright
+        Stop
+    }
+}
+
+actor CandelabraShort /*replaces Deh_Actor_204*/ 3138
+{
+    //$Category Light sources
+    Radius 16
+    Height 20
+    +SOLID
+
+    States
+    {
+    Spawn:
+        CBR2 A -1 Bright
+        Stop
+    }
+}
+
+/*****************************************************************************
+ * ambient sounds
+ ****************************************************************************/
+
+actor AmbientKlaxon : SwitchableDecoration /*replaces Deh_Actor_205*/ 3139
+{
+    //$Category Sounds
+    Radius 8
+    Height 16
+    +RELATIVETOFLOOR
+	
+    States
+    {
+		Spawn:
+        Idle:
+            TNT1 A 1 A_PlaySound("sounds/klaxon", 6, 1.0, true, 2.3) // Channel 6 for Klaxon
+            TNT1 A 0
+        Loop
+    }
+}
+
+actor AmbientPortalOpen : AmbientKlaxon /*replaces Deh_Actor_206*/ 3140
+{
+	Radius 5
+    Height 5
+    //Activation THINGSPEC_Activate // Allows activation by the player
+    //+USESPECIAL // Enables interaction with the player (pressing 'use')
+
+    States
+    {
+        Spawn:
+            TNT1 A -1 NODELAY A_Warp(AAPTR_DEFAULT, 0, 0, 30) // Adjust to set position
+            stop
+
+        Idle:
+            TNT1 A 1
+            Loop
+
+        Active:
+			TNT1 A 0 A_PlaySound("sounds/portal_open",CHAN_AUTO,1.0,false) // Plays sound
+			TNT1 A 1 // Keeps the state active for 1 second (35 tics)
+			TNT1 A 0 A_ChangeFlag("USESPECIAL", false)
+            Goto Death
+		
+		Death:
+			TNT1 A 0
+		stop
+			
+    }
+}
+
+actor AmbientPortalLoop : AmbientKlaxon /*replaces Deh_Actor_207*/ 3141
+{
+    States
+    {
+		Spawn:
+        Idle:
+            TNT1 A 1 A_PlaySound("sounds/portal_loop", 8, 1.0, true, 2.3) // Channel 8 for Portal Loop
+            TNT1 A 0
+        Loop
+    }
+}
+
+actor AmbientPortalClose : AmbientPortalOpen /*replaces Deh_Actor_208*/ 3142
+{
+    States
+    {
+		Spawn:
+			TNT1 A -1 NODELAY A_Warp(AAPTR_DEFAULT, 0, 0, 30) // Adjust to set position
+            stop
+
+        Idle:
+            TNT1 A 1
+            Loop
+		Active:
+			TNT1 A 0 A_PlaySound("sounds/portal_close",CHAN_AUTO,1.0,false) // Plays sound
+			TNT1 A 1
+			TNT1 A 0 A_ChangeFlag("USESPECIAL", false)
+            Goto Death
+    }
+}
+
+
+
+/*****************************************************************************
+ * Monsters
+ ****************************************************************************/
+ACTOR Ghoul  /*replaces /*Deh_Actor_150*/ 3007
+{
+    Health 50
+    Speed 12
+    Radius 16
+    Height 40
+    ReactionTime 8
+    PainChance 128
+    Mass 50
+
+    +SOLID
+    +SHOOTABLE
+    +COUNTKILL
+    +FLOAT
+    +NOGRAVITY
+    +NOBLOOD
+
+    SeeSound "ghoul/sight"
+    ActiveSound "ghoul/active"
+    PainSound "ghoul/pain"
+    DeathSound "ghoul/death"
+	Obituary "%o couldn't outrun the Ghoul's haunting precision."
+
+    States
+    {
+    Spawn:
+        GHUL AB 10 A_Look
+        Loop
+    See:
+        GHUL AABBCCBB 3 A_Chase
+        Loop
+    Missile:
+        GHUL DE 4 Bright A_FaceTarget
+        GHUL F 4 Bright A_CustomMissile("GhoulBall", 32, 0, 0, 8)
+        GHUL G 4 Bright
+        Goto See
+    Pain:
+        GHUL I 3 Bright
+        GHUL K 3 Bright A_Pain
+        Goto See
+    Death:
+        GHUL L 5 Bright
+        GHUL M 5 Bright A_Scream
+        GHUL NO 5 Bright
+        GHUL P 5 Bright A_Fall
+        GHUL QR 5 Bright
+        GHUL S -1
+        Stop
+    }
+}
+
+ACTOR GhoulBall
+{
+    Damage 3
+    Speed 15
+    FastSpeed 20
+    Radius 6
+    Height 8
+
+    +NOBLOCKMAP
+    +NOGRAVITY
+    +DROPOFF
+    +MISSILE
+
+    RenderStyle Translucent
+    Alpha 0.5
+
+  SeeSound "imp/attack"
+  DeathSound "imp/shotx"
+
+    States
+    {
+    Spawn:
+        GBAL AB 4 Bright
+        Loop
+    Death:
+        GBAL C 5 Bright
+        APBX BCDE 5 Bright
+        Stop
+    }
+}
+
+
+ACTOR Banshee /*replaces Deh_Actor_151*/ 3008
+{
+    Health 100
+    Speed 8
+    Radius 20
+    Height 56
+    ReactionTime 8
+    PainChance 64
+    Mass 500
+
+    +SOLID
+    +SHOOTABLE
+    +COUNTKILL
+    +FLOAT
+    +NOGRAVITY
+	+NOBLOOD
+	+FORCERADIUSDMG
+	
+    SeeSound "banshee/sight"
+    PainSound "banshee/pain"
+    DeathSound "banshee/death"
+	HitObituary "%o got a loud goodbye from the banshee."//for some reason A_Explode detects it as an environmental or suicide kill
+	
+    States
+    {
+    Spawn:
+        BSHE AB 10 Bright A_Look
+        Loop
+    See:
+        BSHE A 0 Bright A_PlaySound("banshee/active")
+		BSHE AAABBBCCCAAABBBCCC 2 Bright A_Chase
+        Loop
+    Melee:
+        BSHE D 1 Bright A_Explode(128, 128) // Explosion damage
+		wait
+    Pain:
+        BSHE D 3 Bright
+        BSHE D 3 Bright A_Pain
+        Goto See
+    Death:
+        BSHE D 4 Bright A_Scream
+        BSHE E 6 Bright A_Explode(128, 128)
+        BSHE F 8 Bright A_Fall
+        BSHE G 6 Bright
+        BSHE H 4 Bright
+        TNT1 A 20
+        Stop
+    }
+}
+
+ACTOR Mindweaver /*replaces Deh_Actor_152*/ 3009
+{
+    Health 500 
+    Speed 12 
+    Radius 64
+    Height 64
+    ReactionTime 8
+    PainChance 40
+    Mass 600
+
+    +SOLID
+    +SHOOTABLE
+    +COUNTKILL
+
+    SeeSound "mindweaver/sight"
+    ActiveSound "mindweaver/active"
+    PainSound "spider/pain"
+    DeathSound "mindweaver/death"
+	Obituary "%o's mind was riddled with bullets by the Mindweaver."
+
+    States
+    {
+    Spawn:
+        CSPI AB 10 A_Look
+        Loop
+
+    See:
+        CSPI A 20
+    Walk:
+        CSPI A 0 A_PlaySound("mindweaver/walk")
+        CSPI AABBCC 3 A_Chase
+        CSPI D 0 A_PlaySound("mindweaver/walk")
+        CSPI DDEEFF 3 A_Chase
+        Loop
+
+    Missile:
+        CSPI A 20 A_FaceTarget
+
+    Fighting:
+        CSPI G 4 Bright A_SPosAttack
+        CSPI H 4 Bright A_SPosAttack
+        CSPI H 1 Bright A_SpidRefire
+        Goto Fighting
+
+    Pain:
+        CSPI I 3
+        CSPI I 3 A_Pain
+        Goto Walk
+
+    Death:
+        CSPI J 20 A_Scream
+        CSPI K 7 A_Fall
+        CSPI LMNO 7
+        CSPI P -1 A_BossDeath
+        Stop
+
+    Raise:
+        CSPI P 5
+        CSPI ONMLKJ 5
+        Goto Walk
+    }
+}
+
+ACTOR Shocktrooper /*replaces Deh_Actor_153*/ 3010
+{
+    Health 100
+    Speed 10
+    Radius 20
+    Height 56
+    ReactionTime 8
+    PainChance 30
+    Mass 100
+
+    +SOLID
+    +SHOOTABLE
+    +COUNTKILL
+
+    ActiveSound "shocktrooper/active"
+    PainSound "shocktrooper/pain"
+    DeathSound "shocktrooper/death"
+	Obituary "%o was vaporized by the Shocktrooper's plasma barrage."
+
+    States
+    {
+    Spawn:
+        STPO AB 10 A_Look //Had to rename due to zandronum's possesion rune having similar sprite name
+        Loop
+
+    See:
+        STPO AABBCCDD 2 Fast A_Chase
+        Loop
+
+    Missile:
+        STPO E 10 A_FaceTarget
+        STPO F 2 Fast A_CustomMissile("PlasmaBall", 32, 0, 0, 0)
+        STPO E 4 Fast
+        STPO F 2 Fast A_CustomMissile("PlasmaBall", 32, 0, 0, 0)
+        STPO E 4 Fast
+        STPO F 2 Fast A_CustomMissile("PlasmaBall", 32, 0, 0, 0)
+        STPO E 4 Fast
+        Goto See
+
+    Pain:
+        STPO G 5 Fast
+        STPO G 5 Fast A_Pain
+        Goto See
+
+    Death:
+        STPO H 0 A_FaceTarget
+        STPO H 5 A_SpawnItemEx("ShocktrooperHead", 0, 0, 40, 2, 0, 0, 0)
+        STPO I 5 A_Scream
+        STPO J 5 A_Fall
+        STPO KL 5
+        STPO M -1
+        Stop
+
+    XDeath:
+        STPO N 5
+        STPO O 5 A_XScream
+        STPO P 5 A_Fall
+        STPO Q 0 A_FaceTarget
+        STPO Q 5 A_SpawnItemEx("ShocktrooperTorso", 0, 0, 32, 4, 0, 0, 0)
+        STPO RST 5
+        STPO U -1
+        Stop
+
+    Raise:
+        STPO MLKJIH 5
+        Goto See
+    }
+}
+
+ACTOR ShocktrooperHead
+{
+    Damage 0
+    Speed 8
+    Radius 6
+    Height 16
+
+    +MISSILE
+    +DROPOFF
+    DeathSound "shocktrooper/headdeath"
+
+    States
+    {
+    Spawn:
+        PHED ABCDEFGHI 3 A_SetGravity(0.125)//Couldn't replicate the gravity of the head and torso going off like in the kex version. TBF it looks more realistic ¯\(ツ)/¯
+        Loop
+    Death:
+        PHED J -1
+        Stop
+    }
+}
+
+
+ACTOR ShocktrooperTorso : ShocktrooperHead
+{
+    Damage 0
+    Speed 8
+    Radius 6
+    Height 16
+
+    +MISSILE
+    +DROPOFF
+    +NOBLOCKMAP
+
+    States
+    {
+    Spawn:
+        STPO V 0 A_SetGravity(0.125)
+        STPO V -1
+        Loop
+    Death:
+        STPO W 5
+        STPO X -1
+        Stop
+    }
+}
+
+ACTOR Vassago /*replaces Deh_Actor_154*/ 3011
+{
+    Health 1000
+    Speed 8
+    Radius 24
+    Height 64
+    ReactionTime 8
+    PainChance 100
+    Mass 1000
+	
+	//+NOBLOOD
+    +SOLID
+    +SHOOTABLE
+    +COUNTKILL
+
+    SeeSound "Vassago/SeeSound"
+    ActiveSound "Vassago/ActiveSound"
+    PainSound "Vassago/PainSound"
+    DeathSound "Vassago/DeathSound"
+	BloodColor "orange"
+	Obituary "%o couldn't handle the Vassago's fiery wrath and was reduced to ashes."
+
+    States
+    {
+    Spawn:
+        VASS AB 10 A_Look
+        Loop
+    See:
+        VASS AABBCCDD 3 A_Chase
+        Loop
+	Missile:
+        VASS E 0 Bright A_PlaySound("Vassago/AttackSound")
+        VASS E 8 Bright A_FaceTarget
+        VASS FG 4 Bright A_FaceTarget
+        VASS H 8 Bright A_CustomMissile("VassagoFlame")
+        Goto See
+    Pain:
+        VASS I 2
+        VASS I 2 A_Pain
+        Goto See
+    Death:
+        VASS J 8 Bright
+        VASS K 8 Bright A_Scream
+        VASS L 7 Bright
+        VASS M 6 Bright A_Fall
+        VASS NO 6 Bright
+        VASS P 7 Bright
+        VASS Q -1 A_BossDeath
+        Stop
+    Raise:
+        VASS P 8
+        VASS ONMLKJ 8
+        Goto See
+    }
+}
+
+ACTOR VassagoFlame
+{
+    Damage 5
+    Speed 15
+    FastSpeed 20
+    Radius 6
+    Height 16
+    Mass 10
+	RenderStyle Translucent
+    Alpha 0.5
+	
+    +NOBLOCKMAP
+    +NOGRAVITY
+    +DROPOFF
+    +MISSILE
+
+    SeeSound   "VassagoFlame/SeeSound"
+    DeathSound "VassagoFlame/BurnSound3"
+	
+    states
+    {
+    Spawn:
+        VFLM AB 4 Bright
+        loop
+
+    Death:
+		VFLM C 0 Bright A_ChangeFlag("NOGRAVITY",0)
+	    VFLM C 0 Bright A_ChangeFlag("NOBLOCKMAP",0)
+		VFLM C 0 Bright A_Jump(128, "DeathSound2")
+		VFLM C 0 Bright A_PlaySound("VassagoFlame/BurnSound1")
+        goto Burninate
+	DeathSound2:
+		VFLM C 0 Bright A_PlaySound("VassagoFlame/BurnSound2")
+	goto Burninate
+
+    Burninate:
+        VFLM C 4 Bright A_Explode(10, 128)
+        VFLM D 4 Bright
+        VFLM E 4 Bright
+        VFLM F 0 Bright A_PlaySound("VassagoFlame/BurnSound3")
+        VFLM F 4 Bright A_Explode(10, 128)
+        VFLM G 4 Bright
+        VFLM H 4 Bright
+        VFLM F 0 Bright A_PlaySound("VassagoFlame/BurnSound2")
+        VFLM F 4 Bright A_Explode(10, 128)
+        VFLM G 4 Bright
+        VFLM H 4 Bright
+        VFLM F 0 Bright A_PlaySound("VassagoFlame/BurnSound3")
+        VFLM F 4 Bright A_Explode(10, 128)
+        VFLM G 4 Bright
+        VFLM H 4 Bright
+        VFLM F 0 Bright A_PlaySound("VassagoFlame/BurnSound1")
+        VFLM F 4 Bright A_Explode(10, 128)
+        VFLM G 4 Bright
+        VFLM H 4 Bright
+        VFLM F 0 Bright A_PlaySound("VassagoFlame/BurnSound2")
+        VFLM F 4 Bright A_Explode(10, 128)
+        VFLM G 4 Bright
+        VFLM H 4 Bright
+        VFLM I 0 Bright A_PlaySound("VassagoFlame/BurnSound3")
+        VFLM I 4 Bright A_Explode(10, 128)
+        VFLM J 4 Bright
+        VFLM K 4 Bright
+        VFLM L 4 Bright A_Explode(10, 128)
+        VFLM MNOPQ 4 Bright
+        stop
+    }
+}
+
+ACTOR Tyrant : Cyberdemon /*replaces Deh_Actor_155*/ 3012
+{
+    Health 1000
+    Radius 40
+    Height 110
+    Mass 1000
+    Speed 16
+    PainChance 20
+    Monster
+	Species "Tyrant" // Assigned it as a unique species to the Tyrant so that they can infight with the cyberdemon
+	
+    +BOSS
+    +MISSILEMORE
+    +FLOORCLIP
+    +NORADIUSDMG
+    +DONTMORPH
+    +BOSSDEATH
+
+    SeeSound    "Tyrant/Sight"
+    ActiveSound "cyber/Active"
+    PainSound   "cyber/pain"
+    DeathSound  "Tyrant/Death"
+	Obituary "%o was splattered by a Tyrant's rocket."
+
+    States
+    {
+    Spawn:
+        CYB2 AB 10 A_Look
+        Loop
+
+    See:
+        CYB2 A 3 A_Hoof
+        CYB2 ABBCC 3 A_Chase
+        CYB2 D 0 A_PlaySound("Tyrant/Walk")
+        CYB2 DD 3 A_Chase
+        Loop
+
+    Missile:
+        CYB2 E 6 A_FaceTarget
+        CYB2 F 12 Bright A_CyberAttack
+        CYB2 E 12 A_FaceTarget
+        CYB2 F 12 Bright A_CyberAttack
+        CYB2 E 12 A_FaceTarget
+        CYB2 F 12 Bright A_CyberAttack
+        Goto See
+
+    Pain:
+        CYB2 G 10 A_Pain
+        Goto See
+
+    Death:
+        CYB2 H 10
+        CYB2 I 10 A_Scream
+        CYB2 JKL 10
+        CYB2 M 10 A_Fall
+        CYB2 NO 10
+        CYB2 P 30
+        CYB2 P -1 A_BossDeath
+        Stop
+    }
+}
+
+ACTOR TyrantBoss1 : Tyrant /*replaces Deh_Actor_156*/ 3013
+{
+	+BOSS
+	
+    States
+    {
+    Death:
+        CYB2 H 10
+        CYB2 I 10 A_Scream
+        CYB2 JKL 10
+        CYB2 M 10 A_Fall
+        CYB2 NO 10
+        CYB2 P 30
+        CYB2 P -1 A_BossDeath
+        Stop
+    }
+}
+
+ACTOR TyrantBoss2 : Tyrant /*replaces Deh_Actor_157*/ 3014
+{
+	+BOSS
+	
+    States
+    {
+    Death:
+        CYB2 H 10
+        CYB2 I 10 A_Scream
+        CYB2 JKL 10
+        CYB2 M 10 A_Fall
+        CYB2 NO 10
+        CYB2 P 30
+        CYB2 P -1 A_BossDeath
+        Stop
+    }
+}
+
+/*****************************************************************************
+ * Weapons
+ ****************************************************************************/
+// Fuel Ammo Definition
+ACTOR FuelAmmoSmall : Ammo replaces cell
+{
+	Ammo.BackpackAmount 10
+    Ammo.BackpackMaxAmount 300
+    Inventory.MaxAmount 150
+    Inventory.Amount 10
+    Inventory.Icon "CELLB0"
+    Inventory.PickupMessage "Picked up a fuel can."
+
+    States
+    {
+    Spawn:
+        CELL B -1
+        Stop
+    }
+}
+
+// Large Fuel Tank Pickup
+ACTOR FuelAmmoLarge : FuelAmmoSmall replaces CellPack
+{
+    Inventory.Amount 50
+    Inventory.Icon "CELPB0"
+    Inventory.PickupMessage "Picked up a fuel tank."
+
+    States
+    {
+    Spawn:
+        CELP B -1
+        Stop
+    }
+}
+
+
+
+// Incinerator Weapon
+ACTOR Incinerator : Weapon replaces PlasmaRifle
+{
+    Weapon.AmmoType "FuelAmmoSmall"
+    Weapon.SlotNumber 6
+	Weapon.AmmoGive 40
+	Weapon.ammouse 1
+    Inventory.PickupMessage "You got the Incinerator!"
+	Obituary "%k fired up the Incinerator, and %o was toast."
+	Tag "Incinerator"
+	
+    States
+    {
+    Spawn:
+        PLAS B -1
+        Stop
+	Ready:
+        FLMG A 1 A_WeaponReady
+        Loop
+    Deselect:
+        FLMG A 1 A_Lower
+        Loop
+    Select:
+        FLMG A 1 A_Raise
+        Loop
+    Fire:
+        TNT1 A 0 A_GunFlash
+		FLMG B 0 A_Jump(128, "FireSound2")
+        FLMG B 0 A_PlaySound("Incinerator/FireSound1")
+        Goto FireReal
+    FireSound2:
+        FLMF A 0 A_PlaySound("Incinerator/FireSound2")
+    FireReal:
+        FLMG B 1 A_FireCustomMissile("IncineratorFlame")
+        FLMG C 1
+        FLMG B 1 A_ReFire
+        Goto Ready
+    Flash:
+        FLFF A 1 Bright A_Light2
+        FLFF B 1 Bright A_Light1
+        Goto LightDone
+    }
+}
+
+// Incinerator Flame Projectile
+ACTOR IncineratorFlame : FastProjectile
+{
+    Damage 5
+    Speed 40
+    Radius 13
+    Height 8
+    RenderStyle Translucent
+    Alpha 0.5
+    +NOBLOCKMAP
+    +NOGRAVITY
+    +MISSILE
+    +FORCERADIUSDMG
+
+    States
+    {
+    Spawn:
+        TNT1 A 1 Bright
+        IFLM A 2 Bright
+        IFLM B 2 Bright A_PlaySound("Incinerator/BurnLoop")
+        IFLM CDEFGH 2 Bright
+        Stop
+    Death:
+        IFLM A 0 Bright A_Jump(128, "DeathSound2")
+        IFLM A 0 Bright A_PlaySound("Incinerator/Hit1")
+        Goto Burninate
+    DeathSound2:
+        IFLM A 0 Bright A_PlaySound("Incinerator/Hit2")
+        Goto Burninate
+    Burninate:
+        IFLM I 2 Bright A_Explode(5, 64)
+        IFLM J 2 Bright
+        IFLM I 2 Bright
+        IFLM J 2 Bright A_Explode(5, 64)
+        IFLM K 2 Bright
+        IFLM J 2 Bright
+        IFLM K 2 Bright A_Explode(5, 64)
+        IFLM L 2 Bright
+        IFLM K 2 Bright A_PlaySound("Incinerator/Hit3")
+        IFLM L 2 Bright A_Explode(5, 64)
+        IFLM M 2 Bright
+        IFLM L 2 Bright
+        IFLM M 2 Bright A_Explode(5, 64)
+        IFLM N 2 Bright
+        IFLM M 2 Bright
+        IFLM N 2 Bright A_Explode(5, 64)
+        IFLM O 2 Bright
+        IFLM N 2 Bright
+        IFLM O 2 Bright
+        IFLM POP 2 Bright
+        Stop
+    }
+}
+
+// Heatwave weapon with ZDoom DECORATE definitions
+//took hours to replicate it thanks to jpalomo and spforce for the reference
+ACTOR Heatwave : Weapon replaces BFG9000
+{
+    Weapon.AmmoType "FuelAmmoSmall"
+    Weapon.SlotNumber 7
+	Weapon.ammouse 10
+    Weapon.AmmoGive 40
+	Obituary "%k turned up the heat on %o, now hotter than the equator!"
+    Inventory.PickupMessage "You got the Heatwave Generator!"
+    Tag "Heatwave Generator"
+	+NOAUTOAIM
+	
+
+    States
+    {
+        Spawn:
+            BFUG B -1
+            Stop
+		
+        Ready:
+            HETG A 1 A_WeaponReady
+            Loop
+        Deselect:
+            HETG A 1 A_Lower
+            Loop
+        Select:
+            HETG A 1 A_Raise
+            Loop
+        Fire:
+		Charge:
+			TNT1 A 0 A_TakeInventory("FuelAmmoSmall", 10)
+			HETG A 0 A_GunFlash("flashcharge1")
+			HETG A 20 A_PlayWeaponSound("Heatwave/Charge")
+			HETG A 0 A_JumpIfNoAmmo ("Fire1")
+			HETG A 0 A_Refire("Charge2")
+		Goto Fire1
+			
+		Fire1:
+            HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", -5.0, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", 0.0, 0)
+            HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", 5.0, 0)
+			goto FireEnd
+		
+        Charge2:
+			TNT1 A 0 A_TakeInventory("FuelAmmoSmall", 10)
+			HETG A 0 A_GunFlash("flashcharge2")
+			HETG A 20 A_PlayWeaponSound("Heatwave/Charge")
+			HETG A 0 A_JumpIfNoAmmo ("Fire2")
+			HETG A 0 A_Refire("Charge3")
+			Goto Fire2
+			
+		Fire2:
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", -12.5, 0)
+            HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", -7.5, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", -2.5, 0)
+            HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", 2.5, 0)
+            HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", 7.5, 0)
+            HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", 12.5, 0)
+			Goto FireEnd
+			
+        Charge3:
+			TNT1 A 0 A_TakeInventory("FuelAmmoSmall", 10)
+			HETG A 0 A_GunFlash("flashcharge3")
+			HETG A 20 A_PlayWeaponSound("Heatwave/Charge")
+			HETG A 0 A_JumpIfNoAmmo ("Fire3")
+			HETG A 0 A_Refire("Charge4")
+			Goto Fire3
+			
+		Fire3:
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", -20.0, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", -15.0, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", -10.0, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", -5.0, 0)
+            HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", 0.0, 0)
+            HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", 5.0, 0)
+            HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", 10.0, 0)
+            HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", 15.0, 0)
+            HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", 20.0, 0)
+			Goto FireEnd
+			
+        Charge4:
+			TNT1 A 0 A_TakeInventory("FuelAmmoSmall", 10)
+			HETG A 0 A_GunFlash("flashcharge4")
+			HETG A 20 A_PlayWeaponSound("Heatwave/Charge")
+			HETG A 0 A_JumpIfNoAmmo ("Fire4")
+			HETG A 0 A_Refire("Charge5")
+			Goto Fire4
+			
+		Fire4:
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", -27.5, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", -22.5, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", -17.5, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", -12.5, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper",  -7.5, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper",  -2.5, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper",   2.5, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper",   7.5, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper",  12.5, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper",  17.5, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper",  22.5, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper",  27.5, 0)
+            Goto FireEnd
+			
+        Charge5:
+			TNT1 A 0 A_TakeInventory("FuelAmmoSmall", 10)
+			HETG A 0 A_GunFlash("flashcharge5")
+			HETG A 20 A_PlayWeaponSound("Heatwave/Charge")
+			Goto Fire5
+		
+		Fire5:
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", -35.0, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", -30.0, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", -25.0, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", -20.0, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", -15.0, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper", -10.0, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper",  -5.0, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper",   0.0, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper",   5.0, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper",  10.0, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper",  15.0, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper",  20.0, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper",  25.0, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper",  30.0, 0)
+			HETF A 0 Bright A_FireCustomMissile("HeatwaveRipper",  35.0, 0)
+		FireEnd:
+            HETG A 0 A_GunFlash("flashcharge6")
+			HETF A 3 Bright A_PlayWeaponSound("Heatwave/Fire")
+            HETF B 5 Bright
+            HETG DCB 4
+            Goto Ready
+		Flash:
+        flashcharge1:
+			HETC A 6 Bright
+			HETC BCD 5 Bright
+			Goto LightDone
+		flashcharge2:
+			HETC E 6 Bright
+			HETC FGH 5 Bright
+			Goto LightDone
+		flashcharge3:
+			HETC I 6 Bright
+			HETC JKL 5 Bright
+			Goto LightDone
+		flashcharge4:
+			HETC M 6 Bright
+			HETC NOP 5 Bright
+			Goto LightDone
+		flashcharge5:
+			HETC Q 6 Bright
+			HETC RST 5 Bright
+			Goto LightDone
+		flashcharge6:
+			TNT1 A 3 A_Light1
+			TNT1 A 5 A_Light2
+			Goto LightDone
+    }
+}
+
+// Heatwave Ripper
+//turned it into one actor since since decohack handles projectile spawning differently
+ACTOR HeatwaveRipper : FastProjectile
+{
+    Damage 3
+    Speed 20
+    Radius 16
+    Height 8
+    RenderStyle Translucent
+    Alpha 0.5
+    +NOBLOCKMAP
+    +NOGRAVITY
+    +MISSILE
+    +THRUGHOST
+    +RIPPER
+
+    States
+    {
+    Spawn:
+        HETB ABC 3 Bright
+        Loop
+    Death:
+        HETB DEFGHI 3 Bright
+        Stop
+    }
+}
