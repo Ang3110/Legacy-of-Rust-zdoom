@@ -15,7 +15,7 @@ This project brings ZDoom-close compatibility and development features to ZDoomb
 ### 2. Restrictions
 - **Proprietary Assets:** 
   - No assets from DOOM, DOOM II, or the KEX engine re-releases may be included in any redistributed version of this repository unless explicitly authorized by id Software/Bethesda.
-  - This includes textures, sounds, music, or other intellectual property owned by Bethesda/id Software, **Nightdive Studios**, or **MachineGames**.
+  - This includes textures, sounds, music, or other intellectual property owned by Bethesda/id Software, Nightdive Studios, or MachineGames.
 - **Commercial Use:**
   - This project and its assets may not be used for any commercial purposes, including but not limited to:
     - Paid modifications.
@@ -41,10 +41,5 @@ Original DOOM assets and engine by id Software, Bethesda, Nightdive Studios, and
 
 ### 6. Updates to This License
 - The authors reserve the right to update this license to ensure compliance with legal and community standards.
-
 ---
-
 For more information, visit the official [Bethesda EULA](https://bethesda.net/en/document/eula).
-
----
-
