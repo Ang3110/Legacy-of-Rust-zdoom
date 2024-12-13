@@ -12,18 +12,18 @@ If they are not installed on your computer, use your package manager to install 
 These tools are also available for Windows users. You can search GnuWin32 or Gnu on Windows (GOW): https://github.com/bmatzelle/gow, download and set them up.
 
 1. **Extract the Archive:**
-   Download and extract the `Legacy-of-Rust-zdoom-main` file to your desired directory.
+   Download and extract the file to your desired directory.
 
 2. **Open the Terminal:**
    Navigate to the extracted folder where the `Makefile` is located. For instance:
    ```
-   cd /path/to/Legacy-of-Rust-zdoom-main
+   cd /path/to/extracted zip file
    ```
    then type
    ```
    make
    ```
-   After that your compiled file called `LoR-ZD.pk3` should be located in the dist folder, extract the file  or run from the dist folder directly and run it with one of the following recommended sourceports
+   After that your compiled file called `LoR-ZD.pk3` should be located in the dist folder, you can move the pk3 or run from the dist folder directly and run it with one of the following recommended sourceports
    for example:
    ```
    Windows
