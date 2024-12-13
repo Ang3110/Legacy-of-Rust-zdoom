@@ -1,6 +1,24 @@
 # Legacy-of-Rust-zdoom-custom-edition
 This project brings ZDoom-close compatibility and development features to ZDoombased source ports that don't supposrt mbf21, such as Zandronum, LZDoom, ZDoom, but can also work in gzdoom despite having mbf21 support. It translates and adapts the legacy of LoR Enhanced content into the ZDoom ecosystem while keeping it the same. 
 
+## Build Instructions
+# Linux
+It shouldn't be difficult to build the project. Just make sure you have GNU Make and the zip. 
+Most of the time, they come included in all the Linux distributions. 
+If they are not installed on your computer, use your package manager to install them.
+
+# Windows
+These tools are also available for Windows users. You can search GnuWin32 or Gnu on Windows (GOW), download and set them up.
+
+1. **Extract the Archive:**
+   Download and extract the `Legacy-of-Rust-zdoom-main` file to your desired directory.
+
+2. **Open the Terminal:**
+   Navigate to the extracted folder where the `Makefile` is located. For example:
+   ```bash
+   cd /path/to/Legacy-of-Rust-zdoom-main
+
+
 # License Agreement for Legacy of Rust Modding Tools
 
 ## Terms and Conditions
