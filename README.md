@@ -22,13 +22,13 @@ These tools are also available for Windows users. You can search GnuWin32 or Gnu
    your compiled file called LoR-ZD.pk3 should be located in the dist folder extract the file  or run from the dist folder directly and run it with one of the following recommended sourceports
    for example:
    ```
-   lzdoom -iwad doom2.wad -file dist/LoR-ZD.pk3
+   # Windows
+   lzdoom.exe -iwad C:\path\to\doom2.wad -file C:\path\to\LoR-ZD.pk3 C:\path\to\id1.wad
+   
+   # Linux
+   lzdoom -iwad /path/to/doom2.wad -file /path/to/LoR-ZD.pk3 /path/to/id1.wad
    ```
-   or
-   ```
-   zdoom -iwad doom2.wad -file dist/LoR-ZD.pk3
-   ```
-   same applies to zandronum, and gzdoom as well otherwise a doom file manager like zdl or doom explorer, or drag the pk3 to the suggested sourceports with the doom2 iwad in them.
+   same applies to zandronum, zdoom and gzdoom as well otherwise a file manager like zdl or doom explorer is recommended, or drag the pk3 and the id1.wad to the suggested sourceport's executable with the doom2 iwad in them.
 
 # License Agreement for Legacy of Rust Modding Tools
 
