@@ -14,12 +14,15 @@ These tools are also available for Windows users. You can search GnuWin32 or Gnu
    Download and extract the `Legacy-of-Rust-zdoom-main` file to your desired directory.
 
 2. **Open the Terminal:**
-   Navigate to the extracted folder where the `Makefile` is located. For example:
+   Navigate to the extracted folder where the `Makefile` is located. For instance:
    ```
    cd /path/to/Legacy-of-Rust-zdoom-main
+   ```
+   then type
+   ```
    make
    ```
-   your compiled file called LoR-ZD.pk3 should be located in the dist folder extract the file  or run from the dist folder directly and run it with one of the following recommended sourceports
+   After that your compiled file called LoR-ZD.pk3 should be located in the dist folder, extract the file  or run from the dist folder directly and run it with one of the following recommended sourceports
    for example:
    ```
    # Windows
