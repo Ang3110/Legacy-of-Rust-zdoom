@@ -8,16 +8,27 @@ Most of the time, they come included in all the Linux distributions.
 If they are not installed on your computer, use your package manager to install them.
 
 # Windows
-These tools are also available for Windows users. You can search GnuWin32 or Gnu on Windows (GOW), download and set them up.
+These tools are also available for Windows users. You can search GnuWin32 or Gnu on Windows (GOW): https://github.com/bmatzelle/gow, download and set them up.
 
 1. **Extract the Archive:**
    Download and extract the `Legacy-of-Rust-zdoom-main` file to your desired directory.
 
 2. **Open the Terminal:**
    Navigate to the extracted folder where the `Makefile` is located. For example:
-   ```bash
+   ```
    cd /path/to/Legacy-of-Rust-zdoom-main
-
+   make
+   ```
+   your compiled file called LoR-ZD.pk3 should be located in the dist folder extract the file  or run from the dist folder directly and run it with one of the following recommended sourceports
+   for example:
+   ```
+   lzdoom -iwad doom2.wad -file dist/LoR-ZD.pk3
+   ```
+   or
+   ```
+   zdoom -iwad doom2.wad -file dist/LoR-ZD.pk3
+   ```
+   same applies to zandronum, and gzdoom as well otherwise a doom file manager like zdl or doom explorer, or drag the pk3 to the suggested sourceports with the doom2 iwad in them.
 
 # License Agreement for Legacy of Rust Modding Tools
 
