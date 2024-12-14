@@ -926,12 +926,12 @@ ACTOR Vassago /*replaces Deh_Actor_154*/ 3011
     PainChance 100
     Mass 1000
 	
-	//+NOBLOOD
+    //+NOBLOOD
     +SOLID
     +SHOOTABLE
     +COUNTKILL
 	
-	DamageFactor "VassagoFire", 0.0 //immune to its own projectile and prevent friendly fire amongst its own species
+    DamageFactor "VassagoFire", 0.0 //immune to its own projectile and prevent friendly fire amongst its own species
 	
     SeeSound "Vassago/SeeSound"
     ActiveSound "Vassago/ActiveSound"
@@ -978,13 +978,13 @@ ACTOR Vassago /*replaces Deh_Actor_154*/ 3011
 ACTOR VassagoFlame
 {
     Damage 5
-	DamageType "VassagoFire"
+    DamageType "VassagoFire"
     Speed 15
     FastSpeed 20
     Radius 6
     Height 16
     Mass 10
-	RenderStyle Translucent
+    RenderStyle Translucent
     Alpha 0.5
 	
     +NOBLOCKMAP
