@@ -26,6 +26,15 @@ Special Thanks:
 
 Additional Credits:
   - Refer to the id1.wad credit text file for more information on original assets.
+  
+==================================================
+                   Tools Used
+==================================================
+- SLADE: Used for editing and managing the WAD/PK3 files, including sprites, textures, and DECORATE scripts.
+  Website: https://slade.mancubus.net/
+
+- Ultimate Doom Builder (UDB): Utilized for mapping and modifying levels.
+  Website: https://github.com/jewalky/UltimateDoomBuilder
 
 ==================================================
                  Important Notes
@@ -47,7 +56,7 @@ Highlights:
 Changes and Additions:
 ----------------------
 - Added impassable linedefs to clipable fences, improving map accuracy.
-- placed action 88 to the stair's linedef to trigger tag 52 in map13/E2M6 since ghoulds could not trigger them in their boxed enclosure. this will do for now.
+- placed action 88 to the stair's linedef to trigger tag 52 in map13/E2M6 since ghouls could not trigger them in their boxed enclosure. this will do for now.
 - Converted UMAPINFO to ZMAPINFO for enhanced compatibility with ZDoom-based ports.
 - Introduced the animated PlayStation Doom sky to the following maps:
   ~ Maps 6, 7, 12, and 14.
