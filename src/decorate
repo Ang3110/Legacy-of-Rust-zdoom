@@ -930,7 +930,9 @@ ACTOR Vassago /*replaces Deh_Actor_154*/ 3011
     +SOLID
     +SHOOTABLE
     +COUNTKILL
-
+	
+	DamageFactor "VassagoFire", 0.0 //immune to its own projectile and prevent friendly fire amongst its own species
+	
     SeeSound "Vassago/SeeSound"
     ActiveSound "Vassago/ActiveSound"
     PainSound "Vassago/PainSound"
@@ -946,6 +948,7 @@ ACTOR Vassago /*replaces Deh_Actor_154*/ 3011
     See:
         VASS AABBCCDD 3 A_Chase
         Loop
+	melee:
 	Missile:
         VASS E 0 Bright A_PlaySound("Vassago/AttackSound")
         VASS E 8 Bright A_FaceTarget
@@ -975,6 +978,7 @@ ACTOR Vassago /*replaces Deh_Actor_154*/ 3011
 ACTOR VassagoFlame
 {
     Damage 5
+	DamageType "VassagoFire"
     Speed 15
     FastSpeed 20
     Radius 6
