@@ -53,7 +53,7 @@ Original DOOM assets and engine by id Software, Bethesda, Nightdive Studios, and
 
 ### 3. Compliance with Bethesda's EULA
 - This project is a fan work and is not affiliated with or endorsed by id Software, Bethesda, Nightdive Studios, or MachineGames.
-- Users must own a legal copy of `doom2.wad` and `id1.wad` to use this project.
+- Users must own a legal copy of `doom2.wad` and `id1.wad` or ('id1-res.wad' if its maps, zmapinfo are removed) to use this project.
 - By using this project, you agree to adhere to Bethesda/id Software's End User License Agreement (EULA).
 
 ### 4. Updates to This License
