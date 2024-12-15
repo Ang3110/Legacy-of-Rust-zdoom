@@ -67,12 +67,12 @@ map MAP01 "Scar Gate"
     levelnum = 1
     next = "MAP02"
     secretnext = "MAP02"
-    //author: Samuel Villarreal
+    //author = Samuel Villarreal
 	sky1 = "SKYX1", 0
     cluster = 1
     music = "D_WELCOM"
-	exitpic = "$IN_LORE1"
-	enterpic = "$IN_LORE1"
+	exitpic = "$xwinter0"
+	enterpic = "$xwinter0"
 
 }
 
@@ -81,12 +81,12 @@ map MAP02 "Sanguine Wastes"
     levelnum = 2
     next = "MAP03"
     secretnext = "MAP15"  // Secret exit to MAP15
-    //author: Xaser Acheron
+    //author = Xaser Acheron
 	sky1 = "SKYX3", 0
     cluster = 1
     music = "D_SHORES"
-	exitpic = "$IN_LORE1"
-	enterpic = "$IN_LORE1"
+	exitpic = "$xwinter0"
+	enterpic = "$xwinter0"
 
 }
 
@@ -94,48 +94,48 @@ map MAP03 "Spirit Drains"
 {
     levelnum = 3
     next = "MAP04"
-	//author: Thomas Carter
+	//author = Thomas Carter
     sky1 = "SKYX3", 0
     cluster = 1
     music = "D_BILGE"
-	exitpic = "$IN_LORE1"
-	enterpic = "$IN_LORE1"
+	exitpic = "$xwinter0"
+	enterpic = "$xwinter0"
 }
 
 map MAP04 "Descending Inferno"
 {
     levelnum = 4
     next = "MAP05"
-	//author: Samuel Villarreal
+	//author = Samuel Villarreal
     sky1 = "SKYX3", 0
     cluster = 1
     music = "D_REGARD"
-	exitpic = "$IN_LORE1"
-	enterpic = "$IN_LORE1"
+	exitpic = "$xwinter0"
+	enterpic = "$xwinter0"
 }
 
 map MAP05 "Creeping Hate"
 {
     levelnum = 5
     next = "MAP06"
-	//author: Samuel Villarreal
+	//author = Samuel Villarreal
     sky1 = "SKYZ4", 0
     cluster = 1
     music = "D_LAUGH"
-	exitpic = "$IN_LORE1"
-	enterpic = "$IN_LORE1"
+	exitpic = "$xwinter0"
+	enterpic = "$xwinter0"
 }
 
 map MAP06 "The Coiled City"
 {
     levelnum = 6
     next = "MAP07"
-	//author: Xaser Acheron
+	//author = Xaser Acheron
     sky1 = "FIRESK00"
     cluster = 1
     music = "D_CLOUDY"
-	exitpic = "$IN_LORE1"
-	enterpic = "$IN_LORE1"
+	exitpic = "$xwinter0"
+	enterpic = "$xwinter0"
 }
 
 map MAP07 "Forfeited Salvation"
@@ -143,24 +143,24 @@ map MAP07 "Forfeited Salvation"
     levelnum = 7
 	next = "EndGame1"
 	secretnext = "MAP08"
-	//author: Samuel Villarreal
+	//author = Samuel Villarreal
     sky1 = "FIRESK00"
     cluster = 1
     music = "D_TACTIC"
-	exitpic = "$IN_LORE1"
-	enterpic = "$IN_LORE1"
+	exitpic = "$xwinter0"
+	enterpic = "$xwinter0"
 }
 
 map MAP15 "Ash Mill"
 {
     levelnum = 15
     next = "MAP03"
-	//author: Xaser Acheron
+	//author = Xaser Acheron
     sky1 = "SKYX3", 0
     cluster = 1
     music = "D_OPENIN"
-	exitpic = "$IN_LORE1"
-	enterpic = "$IN_LORE1"
+	exitpic = "$xwinter0"
+	enterpic = "$xwinter0"
 }
 
 // Second Episode Maps
@@ -169,24 +169,24 @@ map MAP08 "Second Coming"
 {
     levelnum = 8
     next = "MAP09"
-	//author: Ethan Watson & Xaser Acheron
+	//author = Ethan Watson & Xaser Acheron
     sky1 = "SKYX2", 0
     cluster = 2
     music = "D_BONK"
-	exitpic = "$IN_LORE2"
-	enterpic = "$IN_LORE2"
+	exitpic = "$xwinter1"
+	enterpic = "$xwinter1"
 }	
 
 map MAP09 "Falsehood"
 {
     levelnum = 9
     next = "MAP10"
-	//author: Samuel Villarreal
+	//author = Samuel Villarreal
     sky1 = "SKYX2", 0
     cluster = 2
     music = "D_DRIVER"
-	exitpic = "$IN_LORE2"
-	enterpic = "$IN_LORE2"
+	exitpic = "$xwinter1"
+	enterpic = "$xwinter1"
 }
 
 map MAP10 "Dis Union"
@@ -194,63 +194,63 @@ map MAP10 "Dis Union"
     levelnum = 10
     next = "MAP11"
     secretnext = "MAP16"  // Secret exit to MAP16
-	//author: Ethan Watson
+	//author = Ethan Watson
     sky1 = "SKYX2", 0
     cluster = 2
     music = "D_WIZARD"
-	exitpic = "$IN_LORE2"
-	enterpic = "$IN_LORE2"
+	exitpic = "$xwinter1"
+	enterpic = "$xwinter1"
 }
 
 map MAP11 "Echoes of Pain"
 {
     levelnum = 11
     next = "MAP12"
-	//author: Samuel Villarreal
+	//author = Samuel Villarreal
     sky1 = "SKYX2", 0
     cluster = 2
     music = "D_DEJAVU"
-	exitpic = "$IN_LORE2"
-	enterpic = "$IN_LORE2"
+	exitpic = "$xwinter1"
+	enterpic = "$xwinter1"
 }
 
 map MAP12 "The Rack"
 {
     levelnum = 12
     next = "MAP13"
-	//author: Samuel Villarreal
+	//author = Samuel Villarreal
     sky1 = "FIRESK00"
     cluster = 2
     music = "D_DISGUS"
-	exitpic = "$IN_LORE2"
-	enterpic = "$IN_LORE2"
+	exitpic = "$xwinter1"
+	enterpic = "$xwinter1"
 }
 
 map MAP13 "Soul Silo"
 {
     levelnum = 13
     next = "MAP14"
-	//author: Kevin Dunlop
+	//author = Kevin Dunlop
     sky1 = "SKYX4", 0
     cluster = 2
     music = "D_VESPER"
 	specialaction = "Cyberdemon", Floor_LowerToLowest, 666, 8 //acts similar to bossaction
-	exitpic = "$IN_LORE2"
-	enterpic = "$IN_LORE2"
+	exitpic = "$xwinter1"
+	enterpic = "$xwinter1"
 }
 
 map MAP14 "Brink"
 {
 	Next = EndSequence, "lorcast0"
 	levelnum = 14
-	//author: Xaser Acheron
+	//author = Xaser Acheron
     sky1 = "GNFRSK00"
     cluster = 2
     music = "D_SKELET"
     specialaction = "TyrantBoss1", Floor_LowerToLowest, 666, 8// TyrantBoss1
     specialaction = "TyrantBoss2", Floor_LowerToLowest,667, 8 // TyrantBoss2
-	exitpic = "$IN_LORE2"
-	enterpic = "$IN_LORE2"
+	exitpic = "$xwinter1"
+	enterpic = "$xwinter1"
 }
 
 //Enjay what would I do without you
@@ -328,12 +328,12 @@ map MAP16 "Panopticon"
 {
     levelnum = 16
     next = "MAP11"
-	//author: Xaser Acheron
+	//author = Xaser Acheron
     sky1 = "SKYX2", 0
     cluster = 2
     music = "D_HELFOR"
-	exitpic = "$IN_LORE2"
-	enterpic = "$IN_LORE2"
+	exitpic = "$xwinter1"
+	enterpic = "$xwinter1"
 }
 
 // Test Map
@@ -342,7 +342,7 @@ map MAP99 "Test Map Please Ignore"
 {
     levelnum = 99
     next = "MAP99"
-	//author: by nobody I guess 
+	//author = by nobody I guess 
     sky1 = "SKYX2", 0
     cluster = 99
     music = "D_BLANK"
