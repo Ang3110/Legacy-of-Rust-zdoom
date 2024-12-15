@@ -1,0 +1,64 @@
+// Legacy of Rust Episode 1 intermission
+
+Background XWIMAP0
+Splat XWISPLAT
+
+Spots
+{
+	MAP01 26 186
+	MAP02 81 177
+	MAP03 101 134
+	MAP04 204 132
+	MAP05 185 84
+	MAP06 201 51
+	MAP07 158 43
+	MAP15 58 115
+}
+
+IfEntering MAP01 Animation 26 186 17
+{
+	XWIURH0
+	TNT1A0
+}
+
+IfEntering MAP02 Animation 81 177 17 
+{
+	XWIURH0
+	TNT1A0
+}
+
+IfEntering MAP03 Animation 101 134 17 
+{
+	XWIURH0
+	TNT1A0
+}
+
+IfEntering MAP04 Animation 204 132 17 
+{
+	XWIURH1
+	TNT1A0
+}
+
+IfEntering MAP05 Animation 185 84 17
+{
+	XWIURH1
+	TNT1A0
+}
+
+IfEntering MAP06 Animation 201 51 17
+{
+	XWIURH3
+	TNT1A0
+}
+
+IfEntering MAP07 Animation 158 43 17
+{
+	XWIURH2
+	TNT1A0
+}
+
+IfEntering MAP15 Animation 58 115 17
+{
+	XWIURH0
+	TNT1A0
+}
