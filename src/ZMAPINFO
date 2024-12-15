@@ -259,6 +259,7 @@ Intermission lorcast0
 	Image
 	{
 		Background = "BOSSBACK"
+		Time = -1
 		Music = "D_DEJAVU"
 	}
 	Link = lorcast
@@ -295,7 +296,6 @@ Intermission lorcast
         CastName = "Mindweaver"
         AttackSound = "Missile", 1, "chainguy/attack"
 		AttackSound = "Missile", 2, "chainguy/attack"
-		AttackSound = "Missile", 3, "chainguy/attack"
     }
 
     Cast
