@@ -29,10 +29,9 @@ TODO List
    5. Optional but not needed
 -----------------
 - implement intermission map screen like  in doom 1
-	- arrows wont switch sides accordingly, maybe because its doom2?
 	- in zandronum and zdoom intermission screen forces it to 5:3 ration even if the graphics are widescreen friendly or on a ratio higher than 5:3 does not stretch to its appropriate size/ratio,
-	hence the arrow pointer's coordination being off.
-	It works in LZdoom and GZdoom just fine.
+	hence the arrow pointer's coordination being off. It works in LZdoom and GZdoom just fine. 
+	Use (lor53_inter_arrow_fix.pk3) to fix it
 		
     _____     ____            (\_/)\f\ \\\ \
   /      \  |  o |            (o.o) \i\\\ \\\
