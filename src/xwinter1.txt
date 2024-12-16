@@ -1,4 +1,4 @@
-// Legacy of Rust Episode 2 intermission
+// Legacy of Rust Episode 2 intermission from wad fusion by Fredrik Johansson and Devin Acker
 
 Background XWIMAP1
 Splat XWISPLAT
