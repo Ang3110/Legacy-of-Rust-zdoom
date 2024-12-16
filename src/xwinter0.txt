@@ -1,4 +1,4 @@
-// Legacy of Rust Episode 1 intermission
+// Legacy of Rust Episode 1 intermission from wad fusion by Fredrik Johansson and Devin Acker
 
 Background XWIMAP0
 Splat XWISPLAT
