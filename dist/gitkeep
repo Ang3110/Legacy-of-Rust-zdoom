@@ -1,0 +1,5 @@
+# Ignore pk3 and txt outputs in dist and Build
+/dist/*.pk3
+/dist/*.txt
+/Build/*
+!/Build/.gitkeep
