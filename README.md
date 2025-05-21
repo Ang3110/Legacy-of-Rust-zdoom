@@ -3,36 +3,33 @@ This project brings ZDoom-close compatibility and development features to ZDoomb
 
 ## Build Instructions
 
+You only need Python and the build script to compile the PK3 file. There is no need for reporift.py or any virtual environment.
+
+You have two options to build the PK3 file:
+
 ### Linux
-It shouldn't be difficult to build the project. Just make sure you have GNU Make and the zip. 
-Most of the time, they come included in all the Linux distributions. 
-If they are not installed on your computer, use your package manager to install them.
+1. Open Terminal.
+2. Navigate to the project folder.
+3. Run the command:
+   ```
+   python3 build.py
+   ```
+4. The build script will prompt you to choose one of the following PK3 files to compile:
+   - `LOR-ZD`
+   - `LOR-ZDCE`
+5. The selected PK3 file will be created in the Build folder.
 
 ### Windows
-These tools are also available for Windows users. You can search GnuWin32 or Gnu on Windows (GOW): https://github.com/bmatzelle/gow, download and set them up.
-
-1. **Extract the Archive:**
-   Download and extract the file to your desired directory.
-
-2. **Open the Terminal:**
-   Navigate to the extracted folder where the `Makefile` is located. For instance:
+1. Open Command Prompt.
+2. Navigate to the project folder.
+3. Run the command:
    ```
-   cd /path/to/extracted zip file
+   python build.py
    ```
-   then type
-   ```
-   make
-   ```
-   After that your compiled file called `LoR-ZD.pk3` should be located in the dist folder, you can move the pk3 or run from the dist folder directly and run it with one of the following recommended sourceports
-   for example:
-   ```
-   Windows
-   lzdoom.exe -iwad C:\path\to\doom2.wad -file C:\path\to\LoR-ZD.pk3 C:\path\to\id1.wad
-   
-   Linux
-   lzdoom -iwad /path/to/doom2.wad -file /path/to/LoR-ZD.pk3 /path/to/id1.wad
-   ```
-   same applies to zandronum, zdoom and gzdoom as well otherwise a file manager like zdl or doom explorer is recommended, or drag the pk3 and the `id1.wad` to the suggested sourceport's executable with the doom2 iwad in them.
+4. The build script will prompt you to choose one of the following PK3 files to compile:
+   - `LOR-ZD`
+   - `LOR-ZDCE`
+5. The selected PK3 file will be created in the Build folder.
 
 # License Agreement for Legacy of Rust Modding Tools
 
