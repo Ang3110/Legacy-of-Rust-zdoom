@@ -2,11 +2,6 @@
 This project brings ZDoom-close compatibility and development features to ZDoombased source ports that don't support mbf21, such as Zandronum, LZDoom, ZDoom, but can also work in gzdoom despite having mbf21 support. It translates and adapts the LoR content into the ZDoom ecosystem while keeping it the same. 
 
 ## Build Instructions
-
-You only need Python and the build script to compile the PK3 file. There is no need for reporift.py or any virtual environment.
-
-You have two options to build the PK3 file:
-
 ### Linux
 1. Open Terminal.
 2. Navigate to the project folder.
