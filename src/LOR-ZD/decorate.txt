@@ -721,7 +721,7 @@ ACTOR Banshee /*replaces Deh_Actor_151*/ 3008
         Loop
     Melee:
         BSHE D 0 A_Die
-		goto Death	
+		stop	
     Pain:
         BSHE D 3 Bright
         BSHE D 3 Bright A_Pain
