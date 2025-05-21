@@ -689,8 +689,8 @@ ACTOR GhoulBall
 
 ACTOR Banshee /*replaces Deh_Actor_151*/ 3008
 {
-    monster
-	Health 100
+    Monster
+    Health 100
     Speed 8
     Radius 20
     Height 56
@@ -702,13 +702,13 @@ ACTOR Banshee /*replaces Deh_Actor_151*/ 3008
     +SHOOTABLE
     +FLOAT
     +NOGRAVITY
-	+NOBLOOD
-	+FORCERADIUSDMG
+    +NOBLOOD
+    +FORCERADIUSDMG
 	
     SeeSound "banshee/sight"
     PainSound "banshee/pain"
     DeathSound "banshee/death"
-	HitObituary "%o got a loud goodbye from the banshee."//for some reason A_Explode detects it as an environmental or suicide kill
+	obituary "%o got a loud goodbye from the banshee."
 	
     States
     {
@@ -720,19 +720,37 @@ ACTOR Banshee /*replaces Deh_Actor_151*/ 3008
 		BSHE AAABBBCCCAAABBBCCC 2 Bright A_Chase
         Loop
     Melee:
-        BSHE D 1 Bright A_Explode(128, 128) // Explosion damage
-		wait
+        BSHE D 0 A_Die
+		goto Death	
     Pain:
         BSHE D 3 Bright
         BSHE D 3 Bright A_Pain
         Goto See
     Death:
         BSHE D 4 Bright A_Scream
-        BSHE E 6 Bright A_Explode(128, 128)
+        BSHE E 0 A_SpawnItem("BansheeExplosion")
+		BSHE E 6 Bright 
         BSHE F 8 Bright A_Fall
         BSHE G 6 Bright
         BSHE H 4 Bright
         TNT1 A 20
+        Stop
+    }
+}
+
+ACTOR BansheeExplosion
+{
+    +NOGRAVITY
+    +NOCLIP
+    +MISSILE
+    +RANDOMIZE
+    DamageType "BansheeBlast"
+
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_Explode(128, 128, 0, false, 0)
         Stop
     }
 }
