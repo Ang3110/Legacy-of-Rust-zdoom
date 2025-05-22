@@ -826,6 +826,7 @@ ACTOR Shocktrooper /*replaces Deh_Actor_153*/ 3010
     ReactionTime 8
     PainChance 30
     Mass 100
+	DropItem "PRDrop"
 	
     +SOLID
     +SHOOTABLE
@@ -1262,6 +1263,27 @@ ACTOR PlasmaRifle_6 : weapon replaces PlasmaRifle
     Stop
   }
 }
+
+//plasma rifle drop toggle
+Actor PRDrop : CustomInventory
+{
+    States
+    {
+        Spawn:
+            TNT1 A 0 NoDelay A_JumpIf(!ACS_NamedExecuteWithResult("SetSTPRToggle"), "nodrop")
+            TNT1 A 0 A_SpawnItem("PlasmaRifle_6")
+            Goto SpawnEnd
+
+        nodrop:
+            TNT1 A 0
+            Goto SpawnEnd
+
+        SpawnEnd:
+            TNT1 A 0
+            Stop
+    }
+}
+
 
 ACTOR BFG9000_7 : weapon replaces BFG9000
 {
