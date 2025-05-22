@@ -1,0 +1,2 @@
+//LoR options
+server int stprtoggle = 1; //shock trooper plasma rifle console variable

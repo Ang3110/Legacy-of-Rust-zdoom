@@ -1,0 +1,34 @@
+OptionMenu "OptionsMenu"
+{
+	Title "OPTIONS"
+	Submenu "Multiplayer Options",		"ZA_MultiplayerOptions" // [TP]
+	StaticText " " // [TP]
+	Submenu "Customize Controls",		"CustomizeControls"
+	Submenu "Mouse options",			"MouseOptions"
+	Submenu "Joystick options",			"JoystickOptions"
+	StaticText " "
+	Submenu "Player Setup",				"PlayerMenu"
+	Submenu "Gameplay Options",			"GameplayOptions"
+	Submenu "ComSpatibility Options",	"CompatibilityOptions"
+	Submenu "Automap Options",			"AutomapOptions"
+	Submenu "HUD Options",				"HUDOptions"
+	Submenu "Miscellaneous Options",	"MiscOptions"
+	Submenu "Sound Options",			"SoundOptions"
+	Submenu "Display Options",			"VideoOptions"
+	Submenu "Set video mode",			"VideoModeMenu"
+	StaticText " "
+	Submenu "Legacy of Rust Options",	"LegacyOfRust"
+	StaticText " "
+	SafeCommand "Reset to defaults",	"reset2defaults"
+	SafeCommand	"Reset to last saved",	"reset2saved"
+	Command "Go to console",			"menuconsole"
+}
+
+OptionMenu "LegacyOfRust"
+{
+    Title "Legacy of Rust Options"
+
+    StaticText ""
+    Option "ShockTrooper Drops Plasma Rifle", "stprtoggle", "OnOff"
+    StaticText ""
+}
