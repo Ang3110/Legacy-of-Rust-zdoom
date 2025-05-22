@@ -830,7 +830,6 @@ ACTOR Shocktrooper /*replaces Deh_Actor_153*/ 3010
     +SOLID
     +SHOOTABLE
     
-
     ActiveSound "shocktrooper/active"
     PainSound "shocktrooper/pain"
     DeathSound "shocktrooper/death"
@@ -863,7 +862,7 @@ ACTOR Shocktrooper /*replaces Deh_Actor_153*/ 3010
 
     Death:
         STPO H 0 A_FaceTarget
-        STPO H 5 A_SpawnItemEx("ShocktrooperHead", 0, 0, 40, 2.0, 0, 1.5, 175.0)
+        STPO H 5 A_SpawnItem("RMHGflip")
         STPO I 5 A_Scream
         STPO J 5 A_Fall
         STPO KL 5
@@ -871,11 +870,11 @@ ACTOR Shocktrooper /*replaces Deh_Actor_153*/ 3010
         Stop
 
     XDeath:
-        STPO N 5
+        STPO N 5 
         STPO O 5 A_XScream
         STPO P 5 A_Fall
         STPO Q 0 A_FaceTarget
-        STPO Q 5 A_SpawnItemEx("ShocktrooperTorso", 0, 0, 32, 4.0, 0, 2.0, 170.0) 
+        STPO Q 5 A_SpawnItem("RSTTflip")
         STPO RST 5
         STPO U -1
         Stop
@@ -892,11 +891,11 @@ ACTOR ShocktrooperHead
     Speed 8
     Radius 6
     Height 16
-	Gravity    0.125
+    Gravity 0.125
 
     +Missile
     +DropOff
-	+NOBLOCKMAP
+    +NOBLOCKMAP
     DeathSound "shocktrooper/headdeath"
 
     States
@@ -904,10 +903,31 @@ ACTOR ShocktrooperHead
     Spawn:
         PHED ABCDEFGHI 3
         Loop
+
     Death:
         PHED J -1
         Stop
     }
+}
+
+ACTOR mheadgib : ShocktrooperHead{xscale -1.0}
+
+ACTOR RMHGflip //randomly marine head gib flip
+{
+	states
+	{
+	spawn:
+		TNT1 a 0
+		TNT1 a 0 a_jump(128,"mhead")
+		TNT1 A 0 A_SpawnItemEx("ShocktrooperHead", 0, 0, 40, 2.0, 0, 1.5, 175.0)
+		goto finish
+			
+	mhead://mirrored head sprite
+		TNT1 A 0 A_SpawnItemEx("mheadgib", 0, 0, 40, 2.0, 0, 1.5, 175.0)
+	finish:
+		TNT1 A 0
+		stop
+	}
 }
 
 ACTOR ShocktrooperTorso : ShocktrooperHead
@@ -923,6 +943,26 @@ ACTOR ShocktrooperTorso : ShocktrooperHead
         STPO X -1
         Stop
     }
+}
+
+ACTOR msttgib : ShocktrooperTorso{xscale -1.0}
+
+ACTOR RSTTflip //randomly ShockTrooper torso flip
+{
+	states
+	{
+	spawn:
+		TNT1 a 0
+		TNT1 a 0 a_jump(128,"mtorso")
+		TNT1 A 0 A_SpawnItemEx("ShocktrooperTorso", 0, 0, 32, 4.0, 0, 2.0, 170.0) 
+		goto finish
+			
+	mtorso://mirrored sprite
+		TNT1 A 0 A_SpawnItemEx("msttgib", 0, 0, 32, 4.0, 0, 2.0, 170.0) 
+	finish:
+		TNT1 A 0
+		stop
+	}
 }
 
 ACTOR Vassago /*replaces Deh_Actor_154*/ 3011
