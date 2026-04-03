@@ -1198,45 +1198,11 @@ ACTOR TyrantBoss2 : Tyrant /*replaces Deh_Actor_157*/ 3014
 /*****************************************************************************
  * Weapons
  ****************************************************************************/
-// Fuel Ammo Definition
-ACTOR FuelAmmoSmall : Ammo replaces cell
-{
-	Ammo.BackpackAmount 10
-    Ammo.BackpackMaxAmount 300
-    Inventory.MaxAmount 150
-    Inventory.Amount 10
-    Inventory.Icon "CELLB0"
-    Inventory.PickupMessage "Picked up a fuel can."
-
-    States
-    {
-    Spawn:
-        CELL B -1
-        Stop
-    }
-}
-
-// Large Fuel Tank Pickup
-ACTOR FuelAmmoLarge : FuelAmmoSmall replaces CellPack
-{
-    Inventory.Amount 50
-    Inventory.Icon "CELPB0"
-    Inventory.PickupMessage "Picked up a fuel tank."
-
-    States
-    {
-    Spawn:
-        CELP B -1
-        Stop
-    }
-}
-
-
 
 // Incinerator Weapon
 ACTOR Incinerator : Weapon replaces PlasmaRifle
 {
-    Weapon.AmmoType "FuelAmmoSmall"
+    Weapon.AmmoType "Cell"
     Weapon.SlotNumber 6
 	Weapon.AmmoGive 40
 	Weapon.ammouse 1
@@ -1335,7 +1301,7 @@ ACTOR IncineratorFlame : FastProjectile
 //took hours to replicate it thanks to jpalomo and spforce for the reference
 ACTOR Heatwave : Weapon replaces BFG9000
 {
-    Weapon.AmmoType "FuelAmmoSmall"
+    Weapon.AmmoType "Cell"
     Weapon.SlotNumber 7
 	Weapon.ammouse 10
     Weapon.AmmoGive 40
@@ -1362,7 +1328,7 @@ ACTOR Heatwave : Weapon replaces BFG9000
             Loop
         Fire:
 		Charge:
-			TNT1 A 0 A_TakeInventory("FuelAmmoSmall", 10)
+			TNT1 A 0 A_TakeInventory("Cell", 10)
 			HETG A 0 A_GunFlash("flashcharge1")
 			HETG A 20 A_PlayWeaponSound("Heatwave/Charge")
 			HETG A 0 A_JumpIfNoAmmo ("Fire1")
@@ -1376,7 +1342,7 @@ ACTOR Heatwave : Weapon replaces BFG9000
 			goto FireEnd
 		
         Charge2:
-			TNT1 A 0 A_TakeInventory("FuelAmmoSmall", 10)
+			TNT1 A 0 A_TakeInventory("Cell", 10)
 			HETG A 0 A_GunFlash("flashcharge2")
 			HETG A 20 A_PlayWeaponSound("Heatwave/Charge")
 			HETG A 0 A_JumpIfNoAmmo ("Fire2")
@@ -1393,7 +1359,7 @@ ACTOR Heatwave : Weapon replaces BFG9000
 			Goto FireEnd
 			
         Charge3:
-			TNT1 A 0 A_TakeInventory("FuelAmmoSmall", 10)
+			TNT1 A 0 A_TakeInventory("Cell", 10)
 			HETG A 0 A_GunFlash("flashcharge3")
 			HETG A 20 A_PlayWeaponSound("Heatwave/Charge")
 			HETG A 0 A_JumpIfNoAmmo ("Fire3")
@@ -1413,7 +1379,7 @@ ACTOR Heatwave : Weapon replaces BFG9000
 			Goto FireEnd
 			
         Charge4:
-			TNT1 A 0 A_TakeInventory("FuelAmmoSmall", 10)
+			TNT1 A 0 A_TakeInventory("Cell", 10)
 			HETG A 0 A_GunFlash("flashcharge4")
 			HETG A 20 A_PlayWeaponSound("Heatwave/Charge")
 			HETG A 0 A_JumpIfNoAmmo ("Fire4")
@@ -1436,7 +1402,7 @@ ACTOR Heatwave : Weapon replaces BFG9000
             Goto FireEnd
 			
         Charge5:
-			TNT1 A 0 A_TakeInventory("FuelAmmoSmall", 10)
+			TNT1 A 0 A_TakeInventory("Cell", 10)
 			HETG A 0 A_GunFlash("flashcharge5")
 			HETG A 20 A_PlayWeaponSound("Heatwave/Charge")
 			Goto Fire5
