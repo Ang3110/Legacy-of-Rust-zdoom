@@ -1329,8 +1329,7 @@ ACTOR BFG9000_7 : weapon replaces BFG9000
 }
 
 // Fuel Ammo Definition
-//trying to avoid using skulltag/zandronum's editor numbers otherwise feel free to change them for your custom mod
-ACTOR FuelAmmoSmall : Ammo 15102 //replaces cell
+ACTOR FuelAmmoSmall : Ammo 28622
 {
 	Ammo.BackpackAmount 10
     Ammo.BackpackMaxAmount 300
@@ -1348,7 +1347,7 @@ ACTOR FuelAmmoSmall : Ammo 15102 //replaces cell
 }
 
 // Large Fuel Tank Pickup
-ACTOR FuelAmmoLarge : FuelAmmoSmall 15103 //replaces CellPack
+ACTOR FuelAmmoLarge : FuelAmmoSmall 28621
 {
     Inventory.Amount 50
     Inventory.Icon "CELPB0"
@@ -1365,7 +1364,7 @@ ACTOR FuelAmmoLarge : FuelAmmoSmall 15103 //replaces CellPack
 
 
 // Incinerator Weapon
-ACTOR Incinerator : Weapon 15100 //replaces PlasmaRifle
+ACTOR Incinerator : Weapon 28619
 {
     Weapon.AmmoType "FuelAmmoSmall"
     Weapon.SlotNumber 8
@@ -1464,7 +1463,7 @@ ACTOR IncineratorFlame : FastProjectile
 
 // Heatwave weapon with ZDoom DECORATE definitions
 //took hours to replicate it thanks to jpalomo and spforce for the reference
-ACTOR Heatwave : Weapon 15101 //replaces BFG9000
+ACTOR Heatwave : Weapon 28620
 {
     Weapon.AmmoType "FuelAmmoSmall"
     Weapon.SlotNumber 9
