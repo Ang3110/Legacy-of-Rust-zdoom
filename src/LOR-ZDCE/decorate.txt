@@ -669,9 +669,10 @@ ACTOR GhoulBall
 
     RenderStyle Translucent
     Alpha 0.5
+	Decal "GhoulScorch"
 
-  SeeSound "imp/attack"
-  DeathSound "imp/shotx"
+	SeeSound "imp/attack"
+	DeathSound "imp/shotx"
 
     States
     {
@@ -1037,6 +1038,7 @@ ACTOR VassagoFlame
     Mass 10
 	RenderStyle Translucent
     Alpha 0.5
+	Decal "Scorch"
 	
     +NOBLOCKMAP
     +NOGRAVITY
@@ -1417,6 +1419,7 @@ ACTOR IncineratorFlame : FastProjectile
     Height 8
     RenderStyle Translucent
     Alpha 0.5
+	Decal "Scorch"
     +NOBLOCKMAP
     +NOGRAVITY
     +MISSILE
@@ -1632,6 +1635,7 @@ ACTOR HeatwaveRipper : FastProjectile
     Height 8
     RenderStyle Translucent
     Alpha 0.5
+	Decal "BladeScorch"
     +NOBLOCKMAP
     +NOGRAVITY
     +MISSILE
