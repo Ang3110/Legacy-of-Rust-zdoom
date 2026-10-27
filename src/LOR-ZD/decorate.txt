@@ -707,7 +707,6 @@ actor LoR31FloatBarrierPermit : CustomInventory
     }
 }
 
-
 // Fixed, non-interactive emitters survive the moving portal floors.
 actor LoR_PortalLoopAnchor 32041
 {
