@@ -1,0 +1,6 @@
+#include "zcommon.acs"
+
+script "SetSTPRToggle" (void)
+{
+    SetResultValue(GetCVar("stprtoggle"));
+}
