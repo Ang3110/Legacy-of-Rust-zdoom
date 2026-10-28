@@ -598,7 +598,113 @@ actor AmbientPortalClose : AmbientPortalOpen /*replaces Deh_Actor_208*/ 3142
     }
 }
 
+//ambient sounds udmf version
+// Reusable Legacy of Rust sound emitters, available on any map.
+// IDs 15040-15043 are retained for existing editor placements. No fixed TID
+// or map-local ACS is required; the shared LORSOUND library is auto-loaded.
+// A_Look preserves id1's original sight/noise wake-up and physical movement.
 
+actor LoR_PortalOpenEmitter 15040
+{
+    //$Category "Legacy of Rust/Sound Emitters"
+    //$Title "Portal open emitter (one shot)"
+    Radius 8
+    Height 16
+    States
+    {
+    Spawn:
+        TNT1 A 1 A_Look
+        Loop
+    See:
+        TNT1 A 0 ACS_NamedExecuteAlways("LoR_PortalOpenSound", 0, 0, 1)
+        TNT1 A 250
+        Stop
+    }
+}
+
+actor LoR_PortalLoopEmitter 15041
+{
+    //$Category "Legacy of Rust/Sound Emitters"
+    //$Title "Portal loop emitter (continuous)"
+    Radius 8
+    Height 16
+    States
+    {
+    Spawn:
+        TNT1 A 1 A_Look
+        Loop
+    See:
+        TNT1 A 0 ACS_NamedExecuteAlways("LoR_PortalLoopSound", 0)
+        TNT1 A -1
+        Stop
+    }
+}
+
+actor LoR_PortalCloseEmitter 15042
+{
+    //$Category "Legacy of Rust/Sound Emitters"
+    //$Title "Portal close emitter (one shot)"
+    Radius 8
+    Height 16
+    States
+    {
+    Spawn:
+        TNT1 A 1 A_Look
+        Loop
+    See:
+        TNT1 A 0 ACS_NamedExecuteAlways("LoR_PortalCloseSound", 0, 0, 1)
+        TNT1 A 105
+        Stop
+    }
+}
+
+actor LoR_KlaxonEmitter 15043
+{
+    //$Category "Legacy of Rust/Sound Emitters"
+    //$Title "Klaxon emitter (35-tic repeat)"
+    Radius 8
+    Height 16
+    States
+    {
+    Spawn:
+        TNT1 A 1 A_Look
+        Loop
+    See:
+        TNT1 A 0 ACS_NamedExecuteAlways("LoR_KlaxonSound", 0)
+        TNT1 A -1
+        Stop
+    }
+}
+
+// Reusable script-controlled anchors and float-barrier support.
+actor LoR_PortalSoundAnchor 32040
+{
+    //$Category "Sounds"
+    //$Title "Script-controlled positional sound anchor"
+    Radius 8
+    Height 16
+    States
+    {
+    Spawn:
+        TNT1 A -1
+        Stop
+    }
+}
+
+actor LoR31FloatBarrierPermit : CustomInventory
+{
+    Inventory.MaxAmount 1
+    +INVENTORY.UNDROPPABLE
+    States
+    {
+    Pickup:
+        TNT1 A 0 A_CheckFlag("FLOAT", "Enable")
+        Fail
+    Enable:
+        TNT1 A 0 A_ChangeFlag("NOBLOCKMONST", true)
+        Stop
+    }
+}
 
 /*****************************************************************************
  * Monsters
@@ -1650,5 +1756,39 @@ ACTOR HeatwaveRipper : FastProjectile
     Death:
         HETB DEFGHI 3 Bright
         Stop
+    }
+}
+
+
+// Invisible portal-loop anchors and shared ground-barrier compatibility.
+actor LoR_PortalLoopAnchor 32041
+{
+    //$Category "Sounds"
+    //$Title "Script-controlled portal loop anchor"
+    Radius 8
+    Height 0
+    +NOBLOCKMAP
+    +NOSECTOR
+    +NOGRAVITY
+    States
+    {
+    Spawn:
+        TNT1 A -1
+        Stop
+    }
+}
+
+actor LoR31Map13BarrierPermit
+{
+    Radius 0
+    Height 0
+    +NOBLOCKMAP
+    +NOSECTOR
+    +NOGRAVITY
+    States
+    {
+    Spawn:
+        TNT1 A 1 A_RadiusGive("LoR31FloatBarrierPermit", 384, 4)
+        Loop
     }
 }
