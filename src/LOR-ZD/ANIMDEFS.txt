@@ -1,5 +1,7 @@
 // Original id1.wad fire palettes and dimensions, Zandronum 3.1 compatible.
 // Each seamless 128-frame loop retains the original 2-tic update speed.
+/*Turns out LoR's animated sky are procedurally generated according to the devs. 
+I took it from psxdoomtc by Mattfrie1 to simulate it*/
 texture FIRESK00
 pic FIRESK00 tics 2
 pic FIRESK01 tics 2
