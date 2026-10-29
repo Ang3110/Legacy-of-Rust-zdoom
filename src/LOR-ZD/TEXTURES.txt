@@ -1,0 +1,5 @@
+// Standalone wall texture; no dummy first entry or PNAMES table required.
+WallTexture WALL51_4, 64, 128
+{
+    Patch WALL51_4, 0, 0
+}
