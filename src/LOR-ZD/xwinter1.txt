@@ -1,0 +1,64 @@
+// Legacy of Rust Episode 2 intermission from wad fusion by Fredrik Johansson and Devin Acker
+
+Background XWIMAP1
+Splat XWISPLAT
+
+Spots
+{
+	MAP08 280 149
+	MAP09 245 131
+	MAP10 196 106
+	MAP11 140 56
+	MAP12 129 119
+	MAP13 89 90
+	MAP14 57 44
+	MAP16 179 49
+}
+
+IfEntering MAP08 Animation 280 149 17
+{
+	XWIURH1
+	TNT1A0
+}
+
+IfEntering MAP09 Animation 245 131 17
+{
+	XWIURH1
+	TNT1A0
+}
+
+IfEntering MAP10 Animation 196 106 17
+{
+	XWIURH0
+	TNT1A0
+}
+
+IfEntering MAP11 Animation 140 56 17
+{
+	XWIURH2
+	TNT1A0
+}
+
+IfEntering MAP12 Animation 129 119 17
+{
+	XWIURH1
+	TNT1A0
+}
+
+IfEntering MAP13 Animation 89 90 17
+{
+	XWIURH1
+	TNT1A0
+}
+
+IfEntering MAP14 Animation 57 44 17
+{
+	XWIURH3
+	TNT1A0
+}
+
+IfEntering MAP16 Animation 179 49 17
+{
+	XWIURH3
+	TNT1A0
+}

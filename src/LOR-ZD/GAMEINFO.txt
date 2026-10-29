@@ -1,0 +1,9 @@
+//================
+// Startup Splash
+//================
+
+STARTUPTYPE = "HEXEN"
+IWAD = "DOOM2.WAD"
+STARTUPTITLE = "Legacy of Rust Zdoom"
+STARTUPCOLORS = "FFAA22","444444"
+STARTUPSONG = "D_LAUGH"

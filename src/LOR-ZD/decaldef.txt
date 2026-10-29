@@ -1,0 +1,98 @@
+/***** GZDoom ID24/LOR decal definitions ***********************************/
+
+//Calamity Blade
+decal BladeScorchLower
+{
+	pic SCORCH1
+	shade "00 00 00"
+	x-scale 0.85
+	y-scale 0.20
+	randomflipx
+	randomflipy
+}
+
+decal BladeScorch1
+{
+	pic HETBA0
+	add 1.0
+	fullbright
+	animator GoAway
+	lowerdecal BladeScorchLower
+}
+
+decal BladeScorch2
+{
+	pic HETBB0
+	add 1.0
+	fullbright
+	animator GoAway
+	lowerdecal BladeScorchLower
+}
+
+decal BladeScorch3
+{
+	pic HETBC0
+	add 1.0
+	fullbright
+	animator GoAway
+	lowerdecal BladeScorchLower
+}
+
+decalgroup BladeScorch
+{
+	BladeScorch1	1
+	BladeScorch2	1
+	BladeScorch3	1
+}
+
+/***** Ghoul Scorches ***********************************************/
+
+decal GhoulScorchLower1 //could resort to "PlasmaScorchLower" to reduce line code, but this is much cleaner & easier to find
+{
+	pic PLASMA1
+	shade "00 00 00"
+	x-scale 0.3
+	y-scale 0.3
+	randomflipx
+	randomflipy
+}
+
+decal GhoulScorch1
+{
+	pic GBALA0
+	add 1.0
+	fullbright
+	animator GoAway
+	lowerdecal GhoulScorchLower1
+}
+
+decal GhoulScorchLower2
+{
+	pic PLASMA2
+	shade "00 00 00"
+	x-scale 0.3
+	y-scale 0.3
+	randomflipx
+	randomflipy
+}
+
+decal GhoulScorch2
+{
+	pic GBALB0
+	add 1.0
+	fullbright
+	animator GoAway
+	lowerdecal GhoulScorchLower2
+}
+
+decalgroup GhoulScorchLower
+{
+	GhoulScorchLower1	1
+	GhoulScorchLower2	1
+}
+
+decalgroup GhoulScorch
+{
+	GhoulScorch1	1
+	GhoulScorch2	1
+}
